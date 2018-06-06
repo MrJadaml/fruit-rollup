@@ -1,13 +1,11 @@
-'use strict';
+import React from 'react';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var React = _interopDefault(require('react'));
+var objectDestructuringEmpty = function (obj) {
+  if (obj == null) throw new TypeError("Cannot destructure undefined");
+};
 
 var Bob = function Bob(_ref) {
-  babelHelpers.objectDestructuringEmpty(_ref);
+  objectDestructuringEmpty(_ref);
 
   return React.createElement(
     'h1',
@@ -16,4 +14,4 @@ var Bob = function Bob(_ref) {
   );
 };
 
-exports.Bob = Bob;
+export { Bob };

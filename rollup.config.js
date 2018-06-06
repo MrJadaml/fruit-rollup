@@ -4,13 +4,11 @@ export default {
   input: 'src/index.js',
   output: {
     file: './dist/bundle.js',
-    format: 'cjs'
+    format: 'es'
   },
   plugins: [
     babel({
       exclude: 'node_modules/**',
-      plugins: ['external-helpers'],
-      externalHelpers: true,
     }),
   ],
   external: ['react'],
